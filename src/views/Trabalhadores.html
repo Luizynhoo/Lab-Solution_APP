@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+   <link rel="stylesheet" href="../public/css/framework/swiper-bundle.min.css">
+   <link rel="stylesheet" href="../public/css/trabalhadores.css">
+   <title>Empregados</title>
+</head>
+
+<body>
+
+   <header>
+      <h1>Fundadores</h1>
+   </header>
+   <nav>
+      <ul>
+         <li>
+            <a onclick="dash()" rec-ajax>
+               <i class="fa-solid fa-house"></i>
+               <span class="nav-item">Painel</span>
+            </a>
+         </li>
+         <li>
+            <a onclick="PGclientes()" rec-ajax>
+               <i class="fa-solid fa-user"></i>
+               <span class="nav-item">Clientes</span>
+            </a>
+         </li>
+         <li>
+            <a onclick="createcadastroCliente()" rec-ajax>
+               <i class="fa-regular fa-clipboard"></i>
+               <span class="nav-item">Cadastro</span>
+            </a>
+         </li>
+         <li>
+            <a onclick="servicos()" rec-ajax>
+               <i class="fa-solid fa-wrench"></i>
+               <span class="nav-item">Serviços</span>
+            </a>
+         </li>
+         <li>
+            <a onclick="trabalhadores()" rec-ajax>
+               <i class="fa-solid fa-briefcase"></i>
+               <span class="nav-item">Fundadores</span>
+            </a>
+         </li>
+         <li class="Verde">
+            <a onclick="verde()" rec-ajax>
+               <i class="fa-solid fa-tree" style="color: #0c972f;"></i>
+               <span class="nav-item">+Verde</span>
+            </a>
+         </li>
+         <li class="sair">
+            <a onclick="fechar()" rec-ajax>
+               <i class="fa-solid fa-power-off"></i>
+               <span class="nav-item">Sair</span>
+            </a>
+         </li>
+      </ul>
+      <div class="relogio">
+         <h3 id="horas"></h3>
+         <h3>:</h3>
+         <h3 id="minutos"></h3>
+      </div>
+   </nav>
+
+
+   <section class="container">
+      <div class="card__container swiper">
+         <div class="card__content">
+            <div class="swiper-wrapper">
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="../public/img/gabriela.jpg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+                  </div>
+
+                  <div class="card__data">
+                     <h3 class="card__name">Gabriela</h3>
+                     <p class="card__description">
+                        Social Media, Designer, Tecnica em Hardware e Dev front-End
+                     </p>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="../public/img/luiz.jpg" alt="image" class="card__img" style="height: 350px;">
+                     <div class="card__shadow"></div>
+                  </div>
+
+                  <div class="card__data">
+                     <h3 class="card__name">Luiz</h3>
+                     <p class="card__description">
+                        Designer, Tecnico em Hardware, Dev Front-End e Back-End
+                     </p>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="../public/img/ryan.jpg" alt="image" class="card__img" style="height: 350px;
+                     width: 100%;">
+                     <div class="card__shadow"></div>
+                  </div>
+
+                  <div class="card__data">
+                     <h3 class="card__name">Ryan</h3>
+                     <p class="card__description">
+                        Tecnico em Hardware, Dev Front-End e Back-End
+                     </p>
+                  </div>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="../public/img/pedro.jpg" alt="image" class="card__img" style="height: 350px;
+                     width: 100%;">
+                     <div class="card__shadow"></div>
+                  </div>
+
+                  <div class="card__data">
+                     <h3 class="card__name">Pedro</h3>
+                     <p class="card__description">
+                        Designer, Tecnico em Hardware, Dev Front-End e Back-End
+                     </p>
+                  </div>
+               </article>
+            </div>
+         </div>
+
+
+         <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+         </div>
+
+         <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+         </div>
+
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+
+
+   <script src="../public/js/horas.js"></script>
+   <script src="../public/js/framework/swiper-bundle.min.js"></script>
+   <script src="../public/js/tr.js"></script>
+   <script src="../public/js/janela1/renderer.js"></script>
+</body>
+
+</html>

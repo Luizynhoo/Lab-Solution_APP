@@ -1,0 +1,131 @@
+@import url(./Componentes/variaveis.css);
+
+body {
+    background: var(--fundo);
+    color: var(--branco);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    align-items: center;
+    text-align: center;
+    color: var(--branco);
+}
+
+header h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    background: linear-gradient(45deg, #fff, #b37ce9, #b277ec, #fff);
+    background-size: 400% 100%;
+    animation: degradeh1 10s linear infinite alternate;
+    animation-delay: 2s;
+    text-align: center;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degradeh1 {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+#dataHora {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #5a006f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.938);
+    width: 60%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+    background-color: #4e004f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    margin-right: 10px;
+}
+
+button#emitirNotaFiscalButton {
+    background-color: #3b0055;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #38003d;
+}
+
+.form-pesquisar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-pesquisar input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.divisao {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+/* New CSS for two-column layout */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}

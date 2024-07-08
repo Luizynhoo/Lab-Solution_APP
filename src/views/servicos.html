@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/servicos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Serviços</title>
+</head>
+
+<body>
+    <header>
+        <h1>Serviços</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a onclick="dash()" rec-ajax>
+                    <i class="fa-solid fa-house"></i>
+                    <span class="nav-item">Painel</span>
+                </a>
+            </li>
+            <li>
+                <a onclick="PGclientes()" rec-ajax>
+                    <i class="fa-solid fa-user"></i>
+                    <span class="nav-item">Clientes</span>
+                </a>
+            </li>
+            <li>
+                <a onclick="createcadastroCliente()" rec-ajax>
+                    <i class="fa-regular fa-clipboard"></i>
+                    <span class="nav-item">Cadastro</span>
+                </a>
+            </li>
+            <li>
+                <a onclick="servicos()" rec-ajax>
+                    <i class="fa-solid fa-wrench"></i>
+                    <span class="nav-item">Serviços</span>
+                </a>
+            </li>
+            <li>
+                <a onclick="trabalhadores()" rec-ajax>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span class="nav-item">Fundadores</span>
+                </a>
+            </li>
+            <li class="Verde">
+                <a onclick="verde()"  rec-ajax>
+                    <i class="fa-solid fa-tree" style="color: #0c972f;"></i>
+                    <span class="nav-item">+Verde</span>
+                </a>
+            </li>
+            <li class="sair">
+                <a onclick="fechar()" rec-ajax>
+                    <i class="fa-solid fa-power-off"></i>
+                    <span class="nav-item">Sair</span>
+                </a>
+            </li>
+        </ul>
+        <div class="relogio">
+            <h3 id="horas"></h3>
+            <h3>:</h3>
+            <h3 id="minutos"></h3>
+        </div>
+    </nav>
+    <div class="servicos" id="servicos">
+        <div class="cards flex4">
+            <div class="card">
+                <div id="reparar" class="image-box">
+                    <img src="../public/img/informatica (1).jpeg" />
+                </div>
+                <div class="content">
+                    <h2>INFORMÁTICA</h2>
+                    <p>Recuperação de dados e serviços de rede</p>
+                </div>
+                <a onclick="informatica()">Vem com o Suporte</a>
+            </div>
+            
+            <div class="card">
+                <div class="image-box">
+                    <img src="../public/img/software.png" />
+                </div>
+                <div class="content">
+                    <h2>SOFTWARES</h2>
+                    <p>Manuntenção, instalação e remoção de vírus +</p>
+                    
+                </div>
+                <a onclick="software()">Reparação de Software</a>
+            </div>
+
+            <div class="card">
+                <div id="reparar" class="image-box">
+                    <img src="../public/img/reparar2.jpeg" />
+                </div>
+                <div class="content">
+                    <h2>Manuntenção</h2>
+                    <p>Customização, montagem e reparo</p>
+                </div>
+                <a onclick="manutencao()">Comece a sua Manuntenção</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../public/js/horas.js"></script>
+    <script src="../public/js/janela1/renderer.js"></script>
+</body>
+
+</html>

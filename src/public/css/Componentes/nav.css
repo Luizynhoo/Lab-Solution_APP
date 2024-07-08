@@ -1,0 +1,91 @@
+/* Navbar Lateral */
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    z-index: 10;
+    background: var(--roxo);
+    width: 90px;
+    overflow: hidden;
+    width: 280px;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.hamburguer {
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+/* .logo img {
+    width: 120px;
+    border-radius: 50%;
+  } */
+
+.logo span {
+    font-weight: bold;
+    padding: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+a {
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav i {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background: var(--roxo2);
+    color: #fff
+}
+
+.Verde a:hover {
+    background: #076e07c2;
+    color: #fff
+}
+
+.sair a:hover{
+    background-color: #970808;
+    color: #fff;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "labsolution_app",
+  "productName":"labsolution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/public/img/win.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=labsolution"
+  },
+  "author": "Lab Solution",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.6",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jspdf": "^2.5.1",
+    "mongoose": "^8.4.0"
+  }
+}

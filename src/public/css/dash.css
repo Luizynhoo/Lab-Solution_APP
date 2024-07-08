@@ -1,0 +1,223 @@
+@import url(./Componentes/nav.css);
+@import url(./Componentes/variaveis.css);
+@import url(./Componentes/relogio.css);
+
+
+body{
+  background: #30134d;
+}
+
+header {
+  margin-top: 20px;
+}
+
+header h1 {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--branco);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+  background: linear-gradient(45deg, #30134d, #9159c9, #9159c9, #fff);
+  background-size: 400% 100%;
+  animation: degradeh1 10s linear infinite alternate;
+  animation-delay: 2s;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes degradeh1 {
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.cabra_rodando {
+  margin-left: 90%;
+  width: 80px;
+  animation: cabra_rodando 2s infinite alternate linear;
+}
+
+@keyframes cabra_rodando {
+  from {
+    transform: rotate(25deg);
+  }
+
+  to {
+    transform: rotate(-25deg);
+  }
+}
+
+
+/* cards */
+
+.cards {
+  padding: 5px 21%;
+}
+
+
+.area-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 80px;
+  margin-top: 50px;
+}
+
+.box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px;
+}
+
+.box img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.box:hover .texto {
+  height: 100%;
+}
+
+.box:hover img {
+  transform: scale(1.2);
+}
+
+.texto {
+  height: 0;
+  width: 100%;
+  background: linear-gradient(transparent, #2a064e 58%);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.texto h2 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 80%;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: var(--branco);
+}
+
+.texto p {
+  color: var(--cinza2);
+}
+
+.texto h3 {
+  color: var(--cinza2);
+}
+
+.texto a {
+  margin-top: 30px;
+  margin-bottom: -40px;
+  color: var(--roxo);
+  text-decoration: none;
+  font-size: 22px;
+  background: var(--branco);
+  border-radius: 50px;
+  text-align: center;
+  padding: 5px 15px;
+  cursor: pointer;
+  width: 100px;
+}
+
+#cliente img{
+  height: 100%;
+}
+
+#din img{
+  height: 100%;
+}
+
+/* Tela financeiro */
+
+#dinheiro {
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  background-color: var(--roxo);
+  border-radius: 5px;
+  color: var(--branco);
+
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+
+  button {
+    padding: 10px 20px;
+    background-color: var(--roxo2);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transition-delay: 0.2s;
+    background-color: var(--branco);
+    color: var(--roxo2);
+  }
+
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+  }
+
+  h2 {
+    margin-top: 25px;
+    font-size: 2.2em;
+  }
+
+  span {
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
+      0 0 40px var(--roxo2), 0 0 70px var(--roxo2), 0 0 80px var(--roxo2),
+      0 0 100px var(--roxo2), 0 0 150px var(--roxo2);
+  }
+}

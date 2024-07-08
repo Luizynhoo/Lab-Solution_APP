@@ -1,0 +1,226 @@
+@import url(./Componentes/variaveis.css);
+@import url(./Componentes/relogio.css);
+
+body {
+    background-color: var(--fundo2);
+    color: var(--branco);
+}
+
+header h1 {
+    margin-top: 20px;
+    margin-left: 48%;
+    color: var(--branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    background: linear-gradient(45deg, #38c038, #41d641, #fff, #fff);
+    background-size: 400% 100%;
+    animation: degradeh1 10s linear infinite alternate;
+    animation-delay: 2s;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degradeh1 {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+/* Navbar Lateral */
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    z-index: 10;
+    background: var(--verde2);
+    width: 90px;
+    overflow: hidden;
+    width: 280px;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.hamburguer {
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+
+.logo span {
+    font-weight: bold;
+    padding: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+a {
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav i {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background: var(--roxo2);
+    color: #fff
+}
+
+.Verde a:hover {
+    background: #076e07c2;
+    color: #fff
+}
+
+.sair a:hover{
+    background-color: #970808;
+    color: #fff;
+}
+
+
+/* formulario */
+.form-container {
+    max-width: 70%;
+    padding: 20px;
+    margin-left: 20%;
+    background-color: var(--verde2);
+    border-radius: 20px;
+    margin-top: 5%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 60vh; 
+}
+
+.form-pesquisar{
+    margin-bottom: 25px;
+
+    input{
+        width: 75%;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid var(--verde2);
+        border-radius: 10px;
+    }
+
+    button{
+        background-color: #4b3621;
+        color: var(--branco);
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 10px;
+    }   
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--branco);
+}
+
+.form-group input {
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--verde2);
+    border-radius: 10px;
+}
+
+textarea{
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--verde2);
+    border-radius: 10px;
+}
+
+.form-img{
+    margin-bottom: 15px;
+}
+
+.form-group #apagar {
+    background-color: #4b3621;
+    color: #ecf0f1;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 65px;
+    margin-left: 187px;
+}
+
+.form-group #apagar:hover {
+    background-color: #e74c3c;
+}
+
+.form-group #btnSalvar {
+    background-color: var(--roxo2);
+    color: #ecf0f1;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 65px;
+    margin-left: 0px;
+}
+
+.form-group #btnSalvar:hover {
+    background-color: #27ae60;
+}
+
+.container {
+    display: flex; 
+    align-items: center; 
+}
+
+.img {
+    flex: 1; 
+    margin-right: 100px;
+    filter: grayscale(100%);
+}
+
+
+form {
+    flex: 2; 
+}
+
