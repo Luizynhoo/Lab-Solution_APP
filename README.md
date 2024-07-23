@@ -4,6 +4,21 @@
 ## Projeto -> A Lab Solution é uma Assistência técnica que tem como objetivo principal garantir o bom funcionamento e a longevidade do seu computador. Isso inclui a resolução de problemas relacionados a hardware e software, como diagnósticos, troca de peças, formatação, instalação de programas, pode realizar manutenções preventivas para evitar falhas futuras e garantir a satisfação do cliente.
 
 ## Tutorial passo a passo do projeto
+
+1- *Instalar o Node.js*
+<br/>
+2- *Crie uma pasta e abra no Vscode*
+<br/>
+3- *Instale todas as dependências necessárias (electron, jspdf e mongoose)*
+<br/>
+4- *Para instalar o electron só seguir a documentação que está no site deles*
+<br/>
+5- *Fazer o download do repositório dentro da pasta criada*
+<br/>
+6- *npm start e podera ver o trabalho em suas mãos*
+<br/>
+Obs: Caso queira mudar o banco de dados precisará do mongodb e alterar o link do banco no arquivo db.js na linha 3
+
 1- *Tela principal de cadastro*
 
 ![Tela de cadastro](https://github.com/Luizynhoo/Lab-Solution/blob/8671cbb73d0df31fddb9066416cef203997c04b9/img/telas/tela1.png)
